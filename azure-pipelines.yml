@@ -2,11 +2,11 @@
 trigger:
   - master
 pool:
-  vmImage: ubuntu-latest
+  vmImage: ubuntu-22.04
 strategy:
   matrix:
     Python36:
-      python.version: "3.6"
+      python.version: "3.6."
 steps:
   - task: UsePythonVersion@0
     inputs:
